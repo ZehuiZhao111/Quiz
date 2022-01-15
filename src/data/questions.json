@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "des": "Who is male?",
+    "options": ["father", "mother", "grandfather"],
+    "answer": ["father", "grandfather"]
+  },
+  {
+    "id": 1,
+    "des": "Who is female?",
+    "options": ["father", "mother", "grandfather"],
+    "answer": ["mother"]
+  },
+  {
+    "id": 2,
+    "des": "Who is female?",
+    "options": ["father", "mother", "grandfather"],
+    "answer": ["mother"]
+  },
+  {
+    "id": 3,
+    "des": "Who is female?",
+    "options": ["father", "mother", "grandfather"],
+    "answer": ["mother"]
+  },
+  {
+    "id": 4,
+    "des": "Who is female?",
+    "options": ["father", "mother", "grandfather"],
+    "answer": ["mother"]
+  }
+]
