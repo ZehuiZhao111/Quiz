@@ -57,7 +57,6 @@ export default {
     },
     showResult(isSubmit) {
       this.submitIsClicked = true
-      console.log(this.submitIsClicked)
       this.isSubmit = isSubmit
       if (this.isSubmit) {
         let count = 0
