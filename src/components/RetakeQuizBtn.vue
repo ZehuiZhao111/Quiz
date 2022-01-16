@@ -1,9 +1,15 @@
 <template>
-  <div class="text-center">
-    <v-btn elevation="2" width="200px" @click="reloadPage"
-      >Retake the quiz</v-btn
-    >
-  </div>
+  <v-btn
+    class="btn"
+    elevation="2"
+    width="200px"
+    :style="{
+      left: '50%',
+      transform: 'translateX(-50%)',
+    }"
+    @click="reloadPage"
+    >Retake the quiz</v-btn
+  >
 </template>
 
 <script>

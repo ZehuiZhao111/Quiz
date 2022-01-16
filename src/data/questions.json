@@ -1,31 +1,24 @@
 [
   {
     "id": 0,
-    "des": "What is the purpose of HTML and CSS?",
+    "des": "Who is making the Web Standards?",
     "options": [
-      "HTML handles data, CSS handles routing",
-      "HTML tells the broswer what to display, CSS tell it what style to display it in",
-      "HTML styles the page, CSS makes it interactive",
-      "HTML makes the page interactive, CSS styles the page"
+      "Mozilla",
+      "Microsoft",
+      "Apple",
+      "The World Wide Web Consortium"
     ],
-    "answer": [
-      "HTML handles data, CSS handles routing",
-      "HTML makes the page interactive, CSS styles the page"
-    ]
+    "answer": "The World Wide Web Consortium"
   },
   {
     "id": 1,
-    "des": "What is the purpose of HTML and CSS?",
+    "des": "What does HTML stand for?",
     "options": [
-      "HTML handles data, CSS handles routing",
-      "HTML tells the broswer what to display, CSS tell it what style to display it in",
-      "HTML styles the page, CSS makes it interactive",
-      "HTML makes the page interactive, CSS styles the page"
+      "Hyper Text Markup Language",
+      "Hyperlinks and Text Markup Language",
+      "Home Tool Markup Language"
     ],
-    "answer": [
-      "HTML handles data, CSS handles routing",
-      "HTML makes the page interactive, CSS styles the page"
-    ]
+    "answer": "Hyper Text Markup Language"
   },
   {
     "id": 2,
@@ -36,37 +29,28 @@
       "HTML styles the page, CSS makes it interactive",
       "HTML makes the page interactive, CSS styles the page"
     ],
-    "answer": [
-      "HTML handles data, CSS handles routing",
-      "HTML makes the page interactive, CSS styles the page"
-    ]
+    "answer": "HTML tells the broswer what to display, CSS tell it what style to display it in"
   },
   {
     "id": 3,
-    "des": "What is the purpose of HTML and CSS?",
+    "des": "Which of the following is a valid type of function javascript supports?",
     "options": [
-      "HTML handles data, CSS handles routing",
-      "HTML tells the broswer what to display, CSS tell it what style to display it in",
-      "HTML styles the page, CSS makes it interactive",
-      "HTML makes the page interactive, CSS styles the page"
+      "Named function",
+      "Anonymous function",
+      "Both of the above",
+      "None of the above"
     ],
-    "answer": [
-      "HTML handles data, CSS handles routing",
-      "HTML makes the page interactive, CSS styles the page"
-    ]
+    "answer": "Both of the above"
   },
   {
     "id": 4,
-    "des": "What is the purpose of HTML and CSS?",
+    "des": "Which of the following selector matches a element based on its id?",
     "options": [
-      "HTML handles data, CSS handles routing",
-      "HTML tells the broswer what to display, CSS tell it what style to display it in",
-      "HTML styles the page, CSS makes it interactive",
-      "HTML makes the page interactive, CSS styles the page"
+      "The Id Selector",
+      "The Universal Selector",
+      "The Descendant Selector",
+      "The Class Selector"
     ],
-    "answer": [
-      "HTML handles data, CSS handles routing",
-      "HTML makes the page interactive, CSS styles the page"
-    ]
+    "answer": "The Id Selector"
   }
 ]

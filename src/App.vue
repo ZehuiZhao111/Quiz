@@ -63,9 +63,8 @@ export default {
         for (let i = 0; i < this.answers.length; i++) {
           const answer = this.answers[i]
           const correctAns = this.questions[i].answer
-          answer.sort()
-          correctAns.sort()
-          if (JSON.stringify(answer) == JSON.stringify(correctAns)) {
+
+          if (answer == correctAns) {
             count = count + 1
           }
         }
@@ -79,15 +78,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.unAnswered {
-  border: 2px solid yellow !important;
-}
-.correct {
-  border: 2px solid #32cd32 !important;
-}
-.wrong {
-  border: 2px solid #b71c1c !important;
-}
-</style>

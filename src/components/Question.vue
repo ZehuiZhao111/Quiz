@@ -3,8 +3,8 @@
     elevation="5"
     class="my-12 rounded-lg"
     :class="{
-      correct: isSubmit && arrEqual(answer, question.answer),
-      wrong: isSubmit && !arrEqual(answer, question.answer),
+      correct: isSubmit && answer == question.answer,
+      wrong: isSubmit && answer !== question.answer,
       unAnswered: !isSubmit && answer.length === 0 && submitIsClicked,
     }"
   >
@@ -12,34 +12,34 @@
       >{{ question.id + 1 }}. {{ question.des }}
     </v-card-title>
     <v-divider></v-divider>
-    <div v-for="(option, i) in question.options" :key="i">
-      <v-checkbox
-        @change="onChange(question.id)"
-        v-model="answer"
-        :label="option"
-        :value="option"
-        :class="{
-          highlight:
-            isSubmit &&
-            !arrEqual(answer, question.answer) &&
-            question.answer.includes(option),
-          whiteText:
-            isSubmit &&
-            !arrEqual(answer, question.answer) &&
-            question.answer.includes(option),
-        }"
-        class="adjust-content ml-4 mr-4 mb-n3 grey--text rounded-lg"
-      ></v-checkbox>
-    </div>
+    <v-radio-group v-model="answer" @change="onChange(question.id)">
+      <div v-for="(option, i) in question.options" :key="i">
+        <v-radio
+          :class="{
+            highlight:
+              isSubmit &&
+              answer !== question.answer &&
+              question.answer.includes(option),
+            whiteText:
+              isSubmit &&
+              answer !== question.answer &&
+              question.answer.includes(option),
+          }"
+          class="adjust-content ml-4 mb-4 mr-4 grey--text rounded-lg"
+          :label="option"
+          :value="option"
+        ></v-radio>
+      </div>
+    </v-radio-group>
     <div
-      class="text-right mt-5 mr-5 mb-2 font-weight-medium"
+      class="text-right mt-n2 mr-5 mb-2 font-weight-medium"
       :class="{
-        correctAns: arrEqual(answer, question.answer),
-        wrongAns: !arrEqual(answer, question.answer),
+        correctAns: answer == question.answer,
+        wrongAns: answer !== question.answer,
       }"
       v-show="isSubmit"
     >
-      {{ arrEqual(answer, question.answer) ? 'Correct' : 'Wrong' }}
+      {{ answer == question.answer ? 'Correct' : 'Wrong' }}
     </div>
   </v-card>
 </template>
@@ -53,7 +53,7 @@ export default {
   },
   data() {
     return {
-      answer: [],
+      answer: '',
     }
   },
   methods: {
@@ -63,16 +63,6 @@ export default {
         answer: this.answer,
       })
     },
-    arrEqual(arr1, arr2) {
-      const arr1Copy = [...arr1]
-      const arr2Copy = [...arr2]
-      arr1Copy.sort()
-      arr2Copy.sort()
-      if (JSON.stringify(arr1Copy) !== JSON.stringify(arr2Copy)) {
-        return false
-      }
-      return true
-    },
   },
 }
 </script>
@@ -80,6 +70,16 @@ export default {
 <style scoped>
 .highlight {
   background: #32cd32;
+  border: 1px solid green;
+}
+.unAnswered {
+  border: 2px solid yellow !important;
+}
+.correct {
+  border: 2px solid #32cd32 !important;
+}
+.wrong {
+  border: 2px solid #b71c1c !important;
 }
 
 .whiteText /deep/ label {
@@ -92,6 +92,8 @@ export default {
 }
 .adjust-content {
   max-width: 800px;
+  min-height: 40px;
+  overflow: hidden;
 }
 
 ::v-deep .v-input__slot {
