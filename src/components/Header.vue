@@ -1,5 +1,9 @@
 <template>
-  <header>Quiz Application</header>
+  <h1
+    class="mobileWidth text-h6 text-md-h5 text-lg-h4 text-xl-h4 text-truncate red darken-4 pl-10"
+  >
+    <p class="grey--text text--lighten-4 mb-0">Quiz Application</p>
+  </h1>
 </template>
 
 <script>
@@ -7,3 +11,12 @@ export default {
   name: 'Header',
 }
 </script>
+
+<style scoped>
+@media screen and (max-width: 600px) {
+  .mobileWidth {
+    height: 60px;
+    padding-top: 13px;
+  }
+}
+</style>

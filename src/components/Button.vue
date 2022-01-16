@@ -1,5 +1,5 @@
 <template>
-  <div class="text-xs-center">
+  <div class="text-xs-center mb-16">
     <v-btn
       elevation="2"
       width="200px"
@@ -10,10 +10,15 @@
       @click="onClick"
       >Submit</v-btn
     >
-    <div v-show="showAlert">
-      <v-alert color="red lighten-2" dark>
+    <div class="alert">
+      <v-alert
+        v-show="showAlert"
+        color="red lighten-2"
+        dark
+        class="mt-5 text-center"
+      >
         Answer all questions before submitting. Unanswered questions are
-        displayed in yellow
+        displayed in yellow.
       </v-alert>
     </div>
   </div>
@@ -49,3 +54,11 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>

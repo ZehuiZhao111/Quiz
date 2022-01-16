@@ -1,32 +1,72 @@
 [
   {
     "id": 0,
-    "des": "Who is male?",
-    "options": ["father", "mother", "grandfather"],
-    "answer": ["father", "grandfather"]
+    "des": "What is the purpose of HTML and CSS?",
+    "options": [
+      "HTML handles data, CSS handles routing",
+      "HTML tells the broswer what to display, CSS tell it what style to display it in",
+      "HTML styles the page, CSS makes it interactive",
+      "HTML makes the page interactive, CSS styles the page"
+    ],
+    "answer": [
+      "HTML handles data, CSS handles routing",
+      "HTML makes the page interactive, CSS styles the page"
+    ]
   },
   {
     "id": 1,
-    "des": "Who is female?",
-    "options": ["father", "mother", "grandfather"],
-    "answer": ["mother"]
+    "des": "What is the purpose of HTML and CSS?",
+    "options": [
+      "HTML handles data, CSS handles routing",
+      "HTML tells the broswer what to display, CSS tell it what style to display it in",
+      "HTML styles the page, CSS makes it interactive",
+      "HTML makes the page interactive, CSS styles the page"
+    ],
+    "answer": [
+      "HTML handles data, CSS handles routing",
+      "HTML makes the page interactive, CSS styles the page"
+    ]
   },
   {
     "id": 2,
-    "des": "Who is female?",
-    "options": ["father", "mother", "grandfather"],
-    "answer": ["mother"]
+    "des": "What is the purpose of HTML and CSS?",
+    "options": [
+      "HTML handles data, CSS handles routing",
+      "HTML tells the broswer what to display, CSS tell it what style to display it in",
+      "HTML styles the page, CSS makes it interactive",
+      "HTML makes the page interactive, CSS styles the page"
+    ],
+    "answer": [
+      "HTML handles data, CSS handles routing",
+      "HTML makes the page interactive, CSS styles the page"
+    ]
   },
   {
     "id": 3,
-    "des": "Who is female?",
-    "options": ["father", "mother", "grandfather"],
-    "answer": ["mother"]
+    "des": "What is the purpose of HTML and CSS?",
+    "options": [
+      "HTML handles data, CSS handles routing",
+      "HTML tells the broswer what to display, CSS tell it what style to display it in",
+      "HTML styles the page, CSS makes it interactive",
+      "HTML makes the page interactive, CSS styles the page"
+    ],
+    "answer": [
+      "HTML handles data, CSS handles routing",
+      "HTML makes the page interactive, CSS styles the page"
+    ]
   },
   {
     "id": 4,
-    "des": "Who is female?",
-    "options": ["father", "mother", "grandfather"],
-    "answer": ["mother"]
+    "des": "What is the purpose of HTML and CSS?",
+    "options": [
+      "HTML handles data, CSS handles routing",
+      "HTML tells the broswer what to display, CSS tell it what style to display it in",
+      "HTML styles the page, CSS makes it interactive",
+      "HTML makes the page interactive, CSS styles the page"
+    ],
+    "answer": [
+      "HTML handles data, CSS handles routing",
+      "HTML makes the page interactive, CSS styles the page"
+    ]
   }
 ]

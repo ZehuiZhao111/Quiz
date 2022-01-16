@@ -82,15 +82,12 @@ export default {
 
 <style>
 .unAnswered {
-  border: 1px solid yellow !important;
+  border: 2px solid yellow !important;
 }
 .correct {
-  border: 1px solid green !important;
+  border: 2px solid #32cd32 !important;
 }
 .wrong {
-  border: 1px solid red !important;
-}
-.highlight {
-  background: green;
+  border: 2px solid #b71c1c !important;
 }
 </style>

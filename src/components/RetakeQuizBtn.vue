@@ -1,5 +1,9 @@
 <template>
-  <button @click="reloadPage">Retake the quiz</button>
+  <div class="text-center">
+    <v-btn elevation="2" width="200px" @click="reloadPage"
+      >Retake the quiz</v-btn
+    >
+  </div>
 </template>
 
 <script>
