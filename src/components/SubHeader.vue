@@ -23,7 +23,7 @@ export default {
 }
 @media screen and (min-width: 768px) {
   .subHeader {
-    margin-left: 70px;
+    margin-left: 60px;
     margin-top: 20px;
     font-size: 27px;
     font-weight: 400;

@@ -1,14 +1,14 @@
 [
   {
     "id": 0,
-    "des": "Who is making the Web Standards?",
+    "des": "What is the purpose of HTML and CSS?",
     "options": [
-      "Mozilla",
-      "Microsoft",
-      "Apple",
-      "The World Wide Web Consortium"
+      "HTML handles data, CSS handles routing",
+      "HTML tells the broswer what to display, CSS tell it what style to display it in",
+      "HTML styles the page, CSS makes it interactive",
+      "HTML makes the page interactive, CSS styles the page"
     ],
-    "answer": "The World Wide Web Consortium"
+    "answer": "HTML tells the broswer what to display, CSS tell it what style to display it in"
   },
   {
     "id": 1,
@@ -22,14 +22,14 @@
   },
   {
     "id": 2,
-    "des": "What is the purpose of HTML and CSS?",
+    "des": "Who is making the Web Standards?",
     "options": [
-      "HTML handles data, CSS handles routing",
-      "HTML tells the broswer what to display, CSS tell it what style to display it in",
-      "HTML styles the page, CSS makes it interactive",
-      "HTML makes the page interactive, CSS styles the page"
+      "Mozilla",
+      "Microsoft",
+      "Apple",
+      "The World Wide Web Consortium"
     ],
-    "answer": "HTML tells the broswer what to display, CSS tell it what style to display it in"
+    "answer": "The World Wide Web Consortium"
   },
   {
     "id": 3,
