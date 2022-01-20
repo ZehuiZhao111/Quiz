@@ -8,11 +8,11 @@
       unAnswered: !isSubmit && answer.length === 0 && submitIsClicked,
     }"
   >
-    <v-card-title class="grey--text text--darken-2 card-title"
+    <v-card-title class="grey--text text--darken-2 card-title ml-4"
       >{{ question.id + 1 }}. {{ question.des }}
     </v-card-title>
     <v-radio-group
-      class="remove-gap"
+      class="remove-gap larger-margin"
       v-model="answer"
       @change="onChange(question.id)"
     >
@@ -28,7 +28,7 @@
               answer !== question.answer &&
               question.answer.includes(option),
           }"
-          class="adjust-content ml-4 mb-4 mr-4 grey--text rounded-lg"
+          class="adjust-content pl-3 ml-4 mb-4 mr-4 grey--text rounded-lg"
           :label="option"
           :value="option"
         ></v-radio>
@@ -134,6 +134,9 @@ export default {
   }
   .grey--text /deep/ label {
     font-size: 16px;
+  }
+  .larger-margin {
+    margin-left: 20px;
   }
 }
 </style>
