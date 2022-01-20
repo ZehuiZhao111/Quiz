@@ -1,6 +1,8 @@
 <template>
-  <h2 class="text-h5 text-md-h4 text-lg-h3 text-xl-h3 pl-10 mt-10">
-    <div class="grey--text mb-0">Quiz - HTML / CSS / JS Practice</div>
+  <h2 class="subHeader">
+    <div class="grey--text text--darken-2">
+      Quiz 1 - HTML / CSS / JS Practice
+    </div>
   </h2>
 </template>
 
@@ -9,3 +11,30 @@ export default {
   name: 'SubHeader',
 }
 </script>
+
+<style scoped>
+@media screen and (max-width: 768px) {
+  .subHeader {
+    margin-left: 40px;
+    margin-top: 45px;
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subHeader {
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 27px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 992px) {
+  .subHeader {
+    margin-left: 250px;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 400;
+  }
+}
+</style>

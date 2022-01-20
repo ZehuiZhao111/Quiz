@@ -1,18 +1,21 @@
 <template>
   <v-card
     elevation="5"
-    class="my-12 rounded-lg"
+    class="my-10 rounded-lg"
     :class="{
       correct: isSubmit && answer == question.answer,
       wrong: isSubmit && answer !== question.answer,
       unAnswered: !isSubmit && answer.length === 0 && submitIsClicked,
     }"
   >
-    <v-card-title class="grey--text text--darken-2"
+    <v-card-title class="grey--text text--darken-2 card-title"
       >{{ question.id + 1 }}. {{ question.des }}
     </v-card-title>
-    <v-divider></v-divider>
-    <v-radio-group v-model="answer" @change="onChange(question.id)">
+    <v-radio-group
+      class="remove-gap"
+      v-model="answer"
+      @change="onChange(question.id)"
+    >
       <div v-for="(option, i) in question.options" :key="i">
         <v-radio
           :class="{
@@ -105,5 +108,32 @@ export default {
 }
 .wrongAns {
   color: #b71c1c;
+}
+.remove-gap {
+  margin-top: -5px;
+}
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 24px;
+  }
+  .grey--text /deep/ label {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-title {
+    font-size: 20px;
+  }
+  .grey--text /deep/ label {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card-title {
+    font-size: 18px;
+  }
+  .grey--text /deep/ label {
+    font-size: 16px;
+  }
 }
 </style>

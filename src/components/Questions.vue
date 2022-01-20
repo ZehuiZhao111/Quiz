@@ -1,10 +1,6 @@
 <template>
-  <div>
-    <div
-      class="largeScreen xLargeScreen ml-10 mr-10 ml-md-16 mr-md-16"
-      v-for="(question, i) in questions"
-      :key="i"
-    >
+  <div class="gap-top">
+    <div class="questions" v-for="(question, i) in questions" :key="i">
       <Question
         @add-answer="addAnswer"
         :question="question"
@@ -36,16 +32,25 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 1264px) {
-  .largeScreen {
-    padding-left: 200px;
-    padding-right: 200px;
+@media screen and (max-width: 768px) {
+  .questions {
+    margin-left: 45px;
+    margin-right: 45px;
   }
 }
-@media screen and (min-width: 1904px) {
-  .xLargeScreen {
-    padding-left: 400px;
-    padding-right: 400px;
+@media screen and (min-width: 768px) {
+  .questions {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .gap-top {
+    margin-top: -20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .questions {
+    margin-left: 250px;
+    margin-right: 250px;
   }
 }
 </style>

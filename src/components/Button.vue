@@ -2,21 +2,17 @@
   <div class="text-xs-center mb-16">
     <v-btn
       elevation="2"
-      width="200px"
+      width="100px"
       :style="{
         left: '50%',
         transform: 'translateX(-50%)',
       }"
+      class="btn"
       @click="onClick"
       >Submit</v-btn
     >
     <div class="alert">
-      <v-alert
-        v-show="showAlert"
-        color="red lighten-2"
-        dark
-        class="mt-5 text-center"
-      >
+      <v-alert v-show="showAlert" dark class="mt-5 text-center alertMsg">
         Answer all questions before submitting. Unanswered questions are
         displayed in yellow.
       </v-alert>
@@ -60,5 +56,15 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.alertMsg {
+  color: red;
+  background-color: transparent;
+}
+.btn {
+  background-color: green !important;
+  border: 1px solid black;
+  color: white !important;
+  text-transform: none;
 }
 </style>

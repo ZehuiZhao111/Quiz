@@ -1,8 +1,6 @@
 <template>
-  <h1
-    class="mobileWidth text-h6 text-md-h5 text-lg-h4 text-xl-h4 red darken-4 pl-10"
-  >
-    <p class="grey--text text--lighten-4 mb-0">Quiz Application</p>
+  <h1 class="header red darken-4">
+    <p class="grey--text text--lighten-4 lift-text">Quiz Application</p>
   </h1>
 </template>
 
@@ -13,16 +11,40 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 600px) {
-  .mobileWidth {
-    height: 60px;
-    padding-top: 13px;
+/* extra small(specail case) */
+@media screen and (max-width: 326px) {
+  .header {
+    font-size: 26px !important;
+  }
+  .lift-text {
+    margin-top: -15px;
   }
 }
-@media screen and (max-width: 205px) {
-  .mobileWidth {
-    height: 70px;
+@media screen and (max-width: 768px) {
+  .header {
+    height: 100px;
+    padding-top: 27px;
+    padding-left: 80px;
+    font-size: 32px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    height: 60px;
+    padding-top: 12px;
+    padding-left: 60px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header {
+    height: 30px;
+    padding-left: 10px;
     padding-top: 2px;
+    font-size: 18px;
+    font-weight: 400;
   }
 }
 </style>

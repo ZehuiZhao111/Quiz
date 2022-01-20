@@ -2,10 +2,8 @@
   <v-app>
     <Header />
     <SubHeader />
-    <!-- <p>{{ answers }}</p> -->
     <div v-show="isSubmit">
       <Result :correctNum="correctNum" />
-      <RetakeQuizBtn />
     </div>
     <Questions
       @add-answer="addAnswer"
@@ -24,7 +22,6 @@ import SubHeader from './components/SubHeader.vue'
 import Result from './components/Result.vue'
 import Questions from './components/Questions.vue'
 import Button from './components/Button.vue'
-import RetakeQuizBtn from './components/RetakeQuizBtn.vue'
 
 export default {
   name: 'App',
@@ -35,7 +32,6 @@ export default {
     Result,
     Questions,
     Button,
-    RetakeQuizBtn,
   },
 
   data() {
